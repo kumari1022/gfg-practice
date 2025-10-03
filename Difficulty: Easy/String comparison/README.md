@@ -1,0 +1,9 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/string-comparison--141631/1">String comparison</a></h2><h3>Difficulty Level : Difficulty: Easy</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">You are given two strings <strong>s1</strong> and <strong>s2</strong> and your task is to&nbsp;compare them on the basis of the&nbsp;priority. </span></p>
+<p><span style="font-size: 18px;"><strong>Note:</strong> Function must return <strong>0</strong> if both the strings are equal, <strong>1</strong> if s1 is greater than s2, and <strong>-1</strong> if s1 is lesser than s2. </span></p>
+<p><span style="font-size: 18px;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 18px;"><strong>Input:</strong> s1 = "adding", s2 = "addio"</span>
+<span style="font-size: 18px;"><strong>Output:</strong> -1
+<strong>Explanation:</strong> 'o' has greater priority than 'n'</span></pre>
+<pre><span style="font-size: 18px;"><strong>Input:</strong> s1 = "abcno", s2 = "abcng"<br></span><span style="font-size: 18px;"><strong>Output:</strong> 1
+</span><span style="font-size: 18px;"><strong>Explanation:</strong> 'o' has greater priority than 'g'<br></span></pre>
+<p><strong style="font-size: 18px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Constraints:<br></strong><span style="font-size: 18px;">1 ≤ |s1|, |s2| ≤ 10</span><sup><span style="font-size: 15px;">3</span></sup><br><span style="font-size: 18px;">The string contains lower case English alphabets</span></p></div><br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Strings</code>&nbsp;<code>Data Structures</code>&nbsp;
