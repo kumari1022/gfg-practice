@@ -2,22 +2,15 @@ import java.util.*;
 
 class GFG {
     ArrayList<Integer> find(int arr[], int x) {
-        int first = findFirst(arr, x);
-        int last = findLast(arr, x);
-
         ArrayList<Integer> result = new ArrayList<>();
-        result.add(first);
-        result.add(last);
-        return result;
-    }
+        int first = -1, last = -1;
 
-    private int findFirst(int[] arr, int x) {
+        // Find first occurrence
         int low = 0, high = arr.length - 1;
-        int index = -1;
         while (low <= high) {
             int mid = low + (high - low) / 2;
             if (arr[mid] == x) {
-                index = mid;
+                first = mid;
                 high = mid - 1; // move left
             } else if (arr[mid] < x) {
                 low = mid + 1;
@@ -25,16 +18,14 @@ class GFG {
                 high = mid - 1;
             }
         }
-        return index;
-    }
 
-    private int findLast(int[] arr, int x) {
-        int low = 0, high = arr.length - 1;
-        int index = -1;
+        // Find last occurrence
+        low = 0;
+        high = arr.length - 1;
         while (low <= high) {
             int mid = low + (high - low) / 2;
             if (arr[mid] == x) {
-                index = mid;
+                last = mid;
                 low = mid + 1; // move right
             } else if (arr[mid] < x) {
                 low = mid + 1;
@@ -42,6 +33,9 @@ class GFG {
                 high = mid - 1;
             }
         }
-        return index;
+
+        result.add(first);
+        result.add(last);
+        return result;
     }
 }
