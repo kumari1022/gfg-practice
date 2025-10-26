@@ -1,10 +1,11 @@
 // User function Template for Java
 
 class Solution {
-    String removeDups(String s) {
-        HashSet<Character> set = new HashSet<>();
+    String removeDups(String s) 
+    {
+        HashSet<Character> set=new HashSet<>();
         String result="";
-        for (char c : s.toCharArray())
+        for (char c:s.toCharArray())
         {
             if(!set.contains(c))
             {
