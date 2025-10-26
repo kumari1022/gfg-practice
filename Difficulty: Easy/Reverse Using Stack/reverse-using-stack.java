@@ -1,6 +1,7 @@
 
 class Solution{
-    public String reverse(String S){
+    public String reverse(String S)
+    {
         Stack<Character> st=new Stack<>();
         for(char c:S.toCharArray())st.push(c);
         StringBuilder sb=new StringBuilder();
